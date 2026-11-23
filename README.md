@@ -69,49 +69,6 @@ El sistema está diseñado bajo el patrón de **Arquitectura en N-Capas (N-Tier)
 
 ---
 
-## ⚙️ Instalación y Configuración
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/Niik1/GameCenter.NET.git
-   cd GameCenter.NET
-   ```
-
-2. **Configuración de Base de Datos:**
-   - Abre SQL Server Management Studio y crea la base de datos `MOANSO_GAMECENTER`.
-   - Ejecuta los scripts de creación de tablas y procedimientos almacenados requeridos por el sistema.
-
-3. **Configurar la Cadena de Conexión:**
-   En la carpeta `ProyectoGameCenter`, crea una copia de `App.config.example` y nómbrala `App.config`:
-
-   ```xml
-   <?xml version="1.0" encoding="utf-8" ?>
-   <configuration>
-       <startup> 
-           <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
-       </startup>
-       <connectionStrings>
-           <add name="MyConnectionString"
-                connectionString="Data Source=TU_SERVIDOR_SQL;Initial Catalog=MOANSO_GAMECENTER;Integrated Security=True;"
-                providerName="System.Data.SqlClient" />
-       </connectionStrings>
-   </configuration>
-   ```
-
-4. **Compilar y Ejecutar:**
-   - Abre la solución `ProyectoGameCenter.sln` en Visual Studio.
-   - Restaura paquetes si fuera necesario y presiona `F5` o haz clic en **Iniciar**.
-
----
-
-## 🔑 Credenciales por Defecto
-
-| Usuario | Contraseña | Rol |
-| :--- | :--- | :--- |
-| `admin` | `123` | Administrador |
-
----
-
 ## 📄 Licencia
 
 Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
